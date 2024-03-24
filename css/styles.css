@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  font-family: "Nunito Sans";
+  transition: background-color 0.4s ease-in-out;
+}
+main {
+  flex-grow: 1;
+  background-color: #fafafa;
+  transition: background-color 0.4s ease-in-out;
+}
+img {
+  display: block;
+  height: auto;
+}
+.container {
+  max-width: 1320px;
+  width: 100%;
+  padding: 0 30px 0 30px;
+}
+
+.site-header {
+  padding: 30px 0;
+  --bs-box-shadow-sm: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+}
+.form-padding {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+.logo__img {
+  width: 135px;
+  height: 20px;
+  transition: fill 0.4s ease-in-out;
+}
+.site-header__link {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #111517;
+  transition: color 0.4s ease-in-out;
+}
+.site-header__link::before {
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/moon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+.local-inpit {
+  height: 48px;
+}
+.local-inpit:first-child {
+  margin-bottom: 40px;
+}
+.local-list {
+  row-gap: 40px;
+  column-gap: 5px;
+}
+.card {
+  border: none;
+  --bs-card-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+  color: #111517;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+.sec-img {
+  height: 158px;
+}
+.card-title {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 26px;
+}
+.card-body {
+  padding-bottom: 46px;
+}
+.local-items {
+  font-size: 14px;
+  line-height: 16px;
+}
+.card-bold {
+  font-weight: 600;
+}
+
+.theme {
+  background-color: #2b3844;
+  .logo__img {
+    fill: #fff;
+  }
+  .site-header__link {
+    color: #fff;
+  }
+  .site-header__link::before {
+    background-image: url("../images/darkmoon.svg");
+  }
+  main {
+    background-color: #202c36;
+  }
+  .card {
+    background-color: #2b3844;
+    color: #fff;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .logo__img {
+    width: 230px;
+    height: 33px;
+  }
+}
+@media only screen and (min-width: 678px) {
+  .container {
+    padding: 0 20px;
+  }
+  .site-header {
+    padding-top: 23px;
+    padding-bottom: 24px;
+  }
+  .site-header__link {
+    font-size: 16px;
+  }
+  .local-inpit {
+    height: 56px;
+  }
+  .local-inpit:first-child {
+    margin-bottom: 0px;
+  }
+  .local-list {
+    row-gap: 75px;
+  }
+}
