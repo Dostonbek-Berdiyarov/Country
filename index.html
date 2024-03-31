@@ -47,10 +47,32 @@
       <section class="form-padding py-sm-5">
         <div class="container">
           <h1 class="visually-hidden">All informations in our site</h1>
-          <div class="row justify-content-between">
-            <div class="col-12 col-sm-4 local-inpit bg-primary"></div>
-            <div class="col-7 col-sm-2 local-inpit bg-primary"></div>
-          </div>
+          <form class="row justify-content-between">
+            <div class="col-12 col-sm-4" local-search>
+              <input
+                type="search"
+                class="form-control local-input h-100 js-input"
+                placeholder="Search for a country…"
+                aria-label="Search for a country…"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="col-7 col-sm-2 local-inpit px-0">
+              <select
+                class="form-select h-100 local-select"
+                aria-label="Filter by Region"
+                required
+                name="region"
+              >
+                <option hidden selected selected>Filter by Region</option>
+                <option value="africa">Africa</option>
+                <option value="america">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+              </select>
+            </div>
+          </form>
         </div>
       </section>
       <section class="cards">
@@ -59,14 +81,14 @@
           <ul
             class="list-unstyled d-flex flex-wrap justify-content-center justify-content-sm-around local-list justify-content-lg-between"
           >
-            <li class="card shadow-sm" style="width: 264px">
+            <li class="card shadow-sm js-cards" style="width: 264px">
               <img
                 src="./images/german.png"
                 class="card-img-top"
                 alt="German's flag"
               />
               <div class="card-body pt-4 px-4">
-                <h3 class="card-title mb-3">Germany</h3>
+                <h3 class="card-title mb-3 js-card-title">Germany</h3>
                 <ul class="list-unstyled">
                   <li class="mb-2 local-items">
                     <strong class="card-bold">Population:</strong> 81,770,900
@@ -80,14 +102,16 @@
                 </ul>
               </div>
             </li>
-            <li class="card shadow-sm" style="width: 264px">
+            <li class="card shadow-sm js-cards" style="width: 264px">
               <img
                 src="./images/usa.png"
                 class="card-img-top sec-img"
                 alt="USA's flag"
               />
               <div class="card-body">
-                <h3 class="card-title mb-3">United States of America</h3>
+                <h3 class="card-title mb-3 js-card-title">
+                  United States of America
+                </h3>
                 <ul class="list-unstyled">
                   <li class="mb-2 local-items">
                     <strong class="card-bold">Population:</strong> 323,947,000
@@ -101,14 +125,14 @@
                 </ul>
               </div>
             </li>
-            <li class="card shadow-sm" style="width: 264px">
+            <li class="card shadow-sm js-cards" style="width: 264px">
               <img
                 src="./images/brazil.png"
                 class="card-img-top"
                 alt="Brazil's flag"
               />
               <div class="card-body">
-                <h3 class="card-title mb-3">Brazil</h3>
+                <h3 class="card-title mb-3 js-card-title">Brazil</h3>
                 <ul class="list-unstyled">
                   <li class="mb-2 local-items">
                     <strong class="card-bold">Population:</strong> 206,135,893
@@ -122,14 +146,14 @@
                 </ul>
               </div>
             </li>
-            <li class="card shadow-sm" style="width: 264px">
+            <li class="card shadow-sm js-cards" style="width: 264px">
               <img
                 src="./images/island.png"
                 class="card-img-top"
                 alt="iseland's flag"
               />
               <div class="card-body">
-                <h3 class="card-title mb-3">Iceland</h3>
+                <h3 class="card-title mb-3 js-card-title">Iceland</h3>
                 <ul class="list-unstyled">
                   <li class="mb-2 local-items">
                     <strong class="card-bold">Population:</strong> 334,300
@@ -143,14 +167,14 @@
                 </ul>
               </div>
             </li>
-            <li class="card shadow-sm" style="width: 264px">
+            <li class="card shadow-sm js-cards" style="width: 264px">
               <img
                 src="./images/afganistan.png"
                 class="card-img-top"
                 alt="Afganistan's flag"
               />
               <div class="card-body">
-                <h3 class="card-title mb-3">Afghanistan</h3>
+                <h3 class="card-title mb-3 js-card-title">Afghanistan</h3>
                 <ul class="list-unstyled">
                   <li class="mb-2 local-items">
                     <strong class="card-bold">Population:</strong> 27,657,145
@@ -164,14 +188,14 @@
                 </ul>
               </div>
             </li>
-            <li class="card shadow-sm" style="width: 264px">
+            <li class="card shadow-sm js-cards" style="width: 264px">
               <img
                 src="./images/aland.png"
                 class="card-img-top"
                 alt="aland's flag"
               />
               <div class="card-body">
-                <h3 class="card-title mb-3">Åland Islands</h3>
+                <h3 class="card-title mb-3 js-card-title">Åland Islands</h3>
                 <ul class="list-unstyled">
                   <li class="mb-2 local-items">
                     <strong class="card-bold">Population:</strong> 28,875
@@ -185,14 +209,14 @@
                 </ul>
               </div>
             </li>
-            <li class="card shadow-sm" style="width: 264px">
+            <li class="card shadow-sm js-cards" style="width: 264px">
               <img
                 src="./images/albania.png"
                 class="card-img-top"
                 alt="albania's flag"
               />
               <div class="card-body">
-                <h3 class="card-title mb-3">Albania</h3>
+                <h3 class="card-title mb-3 js-card-title">Albania</h3>
                 <ul class="list-unstyled">
                   <li class="mb-2 local-items">
                     <strong class="card-bold">Population:</strong> 2,886,026
@@ -206,14 +230,14 @@
                 </ul>
               </div>
             </li>
-            <li class="card shadow-sm" style="width: 264px">
+            <li class="card shadow-sm js-cards" style="width: 264px">
               <img
                 src="./images/algeria.png"
                 class="card-img-top"
                 alt="Algeria's flag"
               />
               <div class="card-body">
-                <h3 class="card-title mb-3">Algeria</h3>
+                <h3 class="card-title mb-3 js-card-title">Algeria</h3>
                 <ul class="list-unstyled">
                   <li class="mb-2 local-items">
                     <strong class="card-bold">Population:</strong> 40,400,000
@@ -235,3 +259,6 @@
     <!-- <script src="./js/bootstrap.min.js"></script> -->
   </body>
 </html>
+
+<!-- action="https://echo.htmlacademy.ru/courses"
+method="GET" -->

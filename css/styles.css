@@ -101,6 +101,19 @@ img {
   -moz-column-gap: 5px;
   column-gap: 5px;
 }
+.local-search {
+  position: relative;
+}
+.local-search::before {
+  position: absolute;
+  top: 19px;
+  left: 32px;
+  background-image: url("../images/search.svg");
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  content: "";
+}
 .card {
   border: none;
   --bs-card-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
@@ -146,6 +159,17 @@ img {
 .theme .card {
   background-color: #2b3844;
   color: #fff;
+}
+.local-input {
+  max-width: 480px;
+  min-width: 343px;
+}
+.local-select {
+  width: 200px;
+}
+.row {
+  row-gap: 40px;
+  align-items: stretch;
 }
 
 @media only screen and (min-width: 450px) {
